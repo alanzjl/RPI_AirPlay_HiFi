@@ -25,7 +25,7 @@ My headphone's impedance is only 55 Ohms so I'm driving it directly.
 ## Prepare your Raspberry Pi Zero W
 
 1. Install Raspbian Buster Lite. Note that (1) we don't need a desktop environment and we want to max out Pi Zero's performance, so I use the Lite version, (2) ***`Buster` is the legacy version***, and using the latest `Bullseye` version may suffer from some compatibility issue. If you use [Raspberry Pi Imager](https://www.raspberrypi.com/software/), see the following screenshot to find the legacy Raspbian Buster Lite. ![imager](Renderings/imager.PNG)
-2. Before removing the sd card from your computer, do the following step:
+2. Before removing the sd card from your computer, do the following steps:
    1. Enable ssh server at startup. Create an empty file called `ssh` (no extension) at the root directory of `boot:`.
    2. Setup WiFi connection. Create a text file named `wpa_supplicant.conf` at the same directiory, paste in the following content: 
 
@@ -51,7 +51,6 @@ My headphone's impedance is only 55 Ohms so I'm driving it directly.
         ```
         Use `dtoverlay=hifiberry-dacplus` for HiFiBerry DAC2 Pro, `dtoverlay=hifiberry-dacplusadcpro` for HiFiBerry DAC + ADC Pro. You can find them on HiFiBerry's product data sheet page (e.g. [this one](https://www.hifiberry.com/docs/data-sheets/datasheet-dac-adc-pro/))
     
-    4. Plug in the sd card, boot up, wait for a while, then your Pi should be able to connect to your wifi directly. Go to your router setup page to find its IP, or you can try directly from your computer with `ssh pi@raspberrypi`. 
-    5. SSH to your Pi Zero, follow [this instruction](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md) to install ShairPort-sync. 
-    6. Reboot. You should be able to find the AirPlay device from your Apple devices.
-    7. 
+ 1. Plug in the sd card, boot up, wait for a while, then your Pi should be able to connect to your wifi directly. Go to your router setup page to find its IP, or you can try directly from your computer with `ssh pi@raspberrypi`. 
+ 2. SSH to your Pi Zero, follow [this instruction](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md) to install ShairPort-sync. 
+ 3. Reboot. You should be able to find the AirPlay device from your Apple devices.
