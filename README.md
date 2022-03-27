@@ -1,6 +1,6 @@
 # RPI-AirPlay-HiFi
 
-AirPlay + DAC + AMP, using a Raspberry Pi Zero W and HiFiBerry
+AirPlay + DAC + AMP, with a Raspberry Pi Zero W and a HiFiBerry
 
 ## Renderings
 Top view           |  Back view
@@ -11,7 +11,7 @@ Exploded View
 
 ## BOM
 
-- 3D printed case, `top.STL` and `bottom.STL`
+- 3D printed case, `top.STL` (no support needed) and `bottom.STL` (need support)
 - Raspberry Pi Zero W
 - A compatible DAC+AMP stack for Rpi. Here are some models compatible with this case:
   - [HIFIBERRY DAC2 PRO](https://www.hifiberry.com/shop/boards/hifiberry-dac2-pro/)
@@ -54,3 +54,4 @@ My headphone's impedance is only 55 Ohms so I'm driving it directly.
     4. Plug in the sd card, boot up, wait for a while, then your Pi should be able to connect to your wifi directly. Go to your router setup page to find its IP, or you can try directly from your computer with `ssh pi@raspberrypi`. 
     5. SSH to your Pi Zero, follow [this instruction](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md) to install ShairPort-sync. 
     6. Reboot. You should be able to find the AirPlay device from your Apple devices.
+    7. 
